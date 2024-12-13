@@ -1,0 +1,25 @@
+{
+  "name": "dogumenter",
+  "version": "1.0.0",
+  "description": "A VSCode extension that lists files in the project directory",
+  "main": "extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemartinlogan/dogumenter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukemartinlogan/dogumenter/issues"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "homepage": "https://github.com/lukemartinlogan/dogumenter#readme",
+  "dependencies": {
+    "glob": "^11.0.0"
+  }
+}
