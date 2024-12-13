@@ -1,25 +1,42 @@
 {
   "name": "dogumenter",
-  "version": "1.0.0",
-  "description": "A VSCode extension that lists files in the project directory",
-  "main": "extension.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "displayName": "dogumenter",
+  "description": "A tool for producing documentation",
+  "version": "0.0.1",
+  "publisher": "vscode-samples",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukemartinlogan/dogumenter.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lukemartinlogan/dogumenter/issues"
-  },
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.74.0"
   },
-  "homepage": "https://github.com/lukemartinlogan/dogumenter#readme",
-  "dependencies": {
-    "glob": "^11.0.0"
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.dogumenter",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@types/node": "^20",
+    "@types/vscode": "^1.73.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
   }
 }
